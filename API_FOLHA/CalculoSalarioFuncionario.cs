@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace API_FOLHA
 {
-    class CalculoSalarioFuncionario : ICalculoSalario
+    public class CalculoSalarioFuncionario : ICalculoSalario
     {
         public string Nome { get; set; }
         public long Cod { get; set; }
