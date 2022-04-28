@@ -31,6 +31,8 @@ namespace API_FOLHA
 
         public void Imprimir()
         {
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine("HOLERITE - FUNCIONÁRIO");
             Console.WriteLine("COD: {0} ", Cod);
             Console.WriteLine("Nome: {0}", Nome);
