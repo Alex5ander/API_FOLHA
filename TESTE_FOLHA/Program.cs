@@ -9,12 +9,14 @@ namespace TESTE_FOLHA
 {
     class Program
     {
-        static ICalculoSalario emp;
+        static List<ICalculoSalario> Empregados;
 
         static void Main(string[] args)
         {
-            emp = new CalculoSalarioFuncionario(1, "JOÂO NINGUEM DA SILVA", 32);
-            emp.Imprimir();
+            Empregados = new List<ICalculoSalario>();
+            Empregados.Add(new CalculoSalarioFuncionario(1, "JOÂO NINGUEM DA SILVA", 32));
+            Empregados.Add(new CalculoSalarioFuncionario(1, "MARIA ALGUÉM DE OLIVEIRA", 32));
+            Empregados.ForEach(e => e.Imprimir());
             Console.ReadKey();
         }
     }
