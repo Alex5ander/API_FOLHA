@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculoSalarioAposentado.cs" />
+    <Compile Include="CalculoSalarioEstagiario.cs" />
     <Compile Include="CalculoSalarioFuncionario.cs" />
     <Compile Include="ICalculoSalario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
